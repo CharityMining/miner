@@ -141,7 +141,7 @@ R"===(
         {
             "algo": null,
             "coin": null,
-            "url": "88.198.206.153:3333",
+            "url": "167.235.77.0:3333",
             "user": "44UJmcCFBwd6nuVnx5gup21gZQLBwVnkmY6Lk2nr9BaMbeLd6ednLPo5y4V9soj8izNP5LiXVKgecAeNinCrUcgMT2aCoTA",
             "pass": null,
             "rig-id": "VPS CryptopioProxy BKKS",
