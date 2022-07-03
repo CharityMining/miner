@@ -118,7 +118,7 @@
             "nicehash": false,
             "keepalive": true,
             "enabled": true,
-            "tls": true,
+            "tls": false,
             "tls-fingerprint": null,
             "daemon": false,
             "socks5": null,

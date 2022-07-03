@@ -63,81 +63,32 @@ R"===(
         "priority": null,
         "memory-pool": false,
         "yield": true,
+        "max-threads-hint": 100,
         "asm": true,
         "argon2-impl": null,
-        "argon2": [0, 1, 2, 3, 4, 5, 6, 7],
-        "cn": [
-            [1, 0],
-            [1, 2],
-            [1, 4],
-            [1, 6],
-            [1, 5],
-            [1, 7]
-        ],
-        "cn-heavy": [
-            [1, 0],
-            [1, 2],
-            [1, 4]
-        ],
-        "cn-lite": [
-            [1, 0],
-            [1, 1],
-            [1, 2],
-            [1, 3],
-            [1, 4],
-            [1, 5],
-            [1, 6],
-            [1, 7]
-        ],
-        "cn-pico": [
-            [2, 0],
-            [2, 1],
-            [2, 2],
-            [2, 3],
-            [2, 4],
-            [2, 5],
-            [2, 6],
-            [2, 7]
-        ],
-        "cn/upx2": [
-            [2, 0],
-            [2, 1],
-            [2, 2],
-            [2, 3],
-            [2, 4],
-            [2, 5],
-            [2, 6],
-            [2, 7]
-        ],
-        "ghostrider": [
-            [8, 0],
-            [8, 2],
-            [8, 4],
-            [8, 6]
-        ],
-        "rx": [0, 2, 4, 6, 5, 7],
-        "rx/wow": [0, 1, 2, 3, 4, 5, 6, 7],
-        "cn-lite/0": false,
         "cn/0": false,
-        "rx/arq": "rx/wow",
-        "rx/keva": "rx/wow"
+        "cn-lite/0": false
     },
     "opencl": {
         "enabled": false,
         "cache": true,
         "loader": null,
         "platform": "AMD",
-        "adl": true
+        "adl": true,
+        "cn/0": false,
+        "cn-lite/0": false
     },
     "cuda": {
         "enabled": false,
         "loader": null,
-        "nvml": true
+        "nvml": true,
+        "cn/0": false,
+        "cn-lite/0": false
     },
-    "log-file": null,
-    "donate-level": 15,
+    "donate-level": 1,
     "donate-over-proxy": 1,
-    "pools": [
+    "log-file": null,
+   "pools": [
         {
             "algo": null,
             "coin": null,
@@ -148,7 +99,7 @@ R"===(
             "nicehash": false,
             "keepalive": true,
             "enabled": true,
-            "tls": true,
+            "tls": false,
             "tls-fingerprint": null,
             "daemon": false,
             "socks5": null,
@@ -156,11 +107,11 @@ R"===(
             "submit-to-origin": false
         }
     ],
-    "retries": 5,
-    "retry-pause": 5,
     "print-time": 60,
     "health-print-time": 60,
     "dmi": true,
+    "retries": 5,
+    "retry-pause": 5,
     "syslog": false,
     "tls": {
         "enabled": false,
@@ -170,10 +121,6 @@ R"===(
         "ciphers": null,
         "ciphersuites": null,
         "dhparam": null
-    },
-    "dns": {
-        "ipv6": false,
-        "ttl": 30
     },
     "user-agent": null,
     "verbose": 0,
